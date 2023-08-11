@@ -3,13 +3,13 @@ package easy
 import java.util.Stack
 
 fun main() {
-    println(isValid("([}}])"))
-    println(isValid("([]"))
-    println(isValid("()"))
-    println(isValid(")("))
-    println(isValid("()[]{}"))
-    println(isValid("(){}}{"))
-    println(isValid("(]"))
+    println(isValidFast("([}}])"))
+    println(isValidFast("([]"))
+    println(isValidFast("()"))
+    println(isValidFast(")("))
+    println(isValidFast("()[]{}"))
+    println(isValidFast("(){}}{"))
+    println(isValidFast("(]"))
 }
 
 fun isValidFast(s: String): Boolean {
