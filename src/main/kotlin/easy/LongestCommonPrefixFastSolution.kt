@@ -12,7 +12,7 @@ fun longestCommonPrefixFast(strs: Array<String>): String {
     var prefix = ""
     if (strs.isEmpty()) return prefix
     prefix = strs[0]
-    for (i in 1..strs.size - 1) {
+    for (i in 1..<strs.size) {
         while (strs[i].indexOf(prefix) != 0) {
             prefix = prefix.substring(0, prefix.length - 1)
         }

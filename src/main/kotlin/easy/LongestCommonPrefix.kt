@@ -10,7 +10,7 @@ fun longestCommonPrefix(strs: Array<String>): String {
     if (strs.isEmpty()) return prefix
     var index = 0
     for (c in strs[0]) {
-        for (i in 1..strs.size - 1) {
+        for (i in 1..<strs.size) {
             if (index >= strs[i].length || c != strs[i][index])
                 return prefix
         }
